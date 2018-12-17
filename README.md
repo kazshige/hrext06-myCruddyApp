@@ -10,9 +10,9 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 - [x] Write to local storage
 - [x] Read from local storage
 - [x] Edit local storage
-    - [ ] What about if we have more than one value?
-    - [ ] how do we add multiple values?
-        - [ ] maybe use an array?
+    - [x] What about if we have more than one value?
+    - [x] how do we add multiple values?
+        - [x] maybe use an array?
         - [ ] maybe use multiple keys? create new keyname each time
 
 - [x] Delete local storage
