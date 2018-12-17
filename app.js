@@ -13,19 +13,18 @@ $(document).ready(function(){
     
     var fieldValue = $('.text-entry').val();
 
-    myItemInStorage.push(fieldValue);
+    // myItemInStorage.push(fieldValue); // ["test1","test2","test3"]
+    myItemInStorage.push(fieldValue); // {"0":"test1","1":"test2","2":"test3"}
 
     localStorage.setItem('inputFieldValue', JSON.stringify(myItemInStorage));
     
     console.log('myItemInStorage', myItemInStorage);
 
-    // display the value here
-    $('.list-display-field').text(myItemInStorage); // ??
-  });
-  
-  // delete from local storage when delete button clicked
-  $('.btn-delete').on('click', function(){
-    localStorage.removeItem('inputFieldValue');
-  });
+    const list = myItemInStorage.reduce(
+      (list, currentValue, index) => `${list}<div id="${index}">${currentValue}</div>`
+    , '');
 
+    // display the value here
+    $('.list-display-field').html(list); // ??
+  });  
 });
