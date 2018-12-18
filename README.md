@@ -13,7 +13,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
     - [x] What about if we have more than one value?
     - [x] how do we add multiple values?
         - [x] maybe use an array?
-        - [ ] maybe use multiple keys? create new keyname each time
+        - [x] maybe use multiple keys? create new keyname each time
 
 - [x] Delete local storage
     - [x] delete button storage.removeItem()
@@ -22,6 +22,9 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 
 ### Next Sprint (what are we trying to code)
 Examples: Replace with your own.
+
+- [ ] Add show and hide list button
+
 - [ ] animate when new data is added
 - [ ] color code the data by timestape (older more greyed out)
 - [ ] Read from yelp api to get good bagel advice in a city

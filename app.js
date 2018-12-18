@@ -8,19 +8,19 @@ $(document).ready(function(){
     if(myItemInStorage) {
       myItemInStorage = JSON.parse(myItemInStorage);
     } else {
-      myItemInStorage = [];
+      myItemInStorage = {}; // if diplay in array => myItemInStorage = {} 
     }
     
     var fieldValue = $('.text-entry').val();
 
-    // myItemInStorage.push(fieldValue); // ["test1","test2","test3"]
-    myItemInStorage.push(fieldValue); // {"0":"test1","1":"test2","2":"test3"}
+    // myItemInStorage.push(fieldValue); // ["apple","orange","kiwi"]
+    myItemInStorage[Object.keys(myItemInStorage).length] = fieldValue; // {"0":"apple","1":"orange","2":"kiwi"}
 
     localStorage.setItem('inputFieldValue', JSON.stringify(myItemInStorage));
     
     console.log('myItemInStorage', myItemInStorage);
 
-    const list = myItemInStorage.reduce(
+    const list = Object.values(myItemInStorage).reduce(
       (list, currentValue, index) => `${list}<div id="${index}">${currentValue}</div>`
     , '');
 
