@@ -24,6 +24,6 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 Examples: Replace with your own.
 
 - [x] Add toggle button to show and hide values
-- [x] Add another text field to save username with message
+- [x] Add text fields to display username and message
 - [x] Enable to display the input date and time in local storage
 - [ ] Optional: Host on repl.it (html,css, js)
