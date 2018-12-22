@@ -17,17 +17,13 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 
 - [x] Delete local storage
     - [x] delete button storage.removeItem()
-    - [ ] delete all storage.clear()
+    - [x] delete all storage.clear()
 - [x] Display stored value in proper div
 
 ### Next Sprint (what are we trying to code)
 Examples: Replace with your own.
 
-- [ ] Add show and hide list button
-
-- [ ] animate when new data is added
-- [ ] color code the data by timestape (older more greyed out)
-- [ ] Read from yelp api to get good bagel advice in a city
-- [ ] save my local storage to a remote storage for back up
-
+- [x] Add toggle button to show and hide values
+- [x] Add another text field to save username with message
+- [x] Enable to display the input date and time in local storage
 - [ ] Optional: Host on repl.it (html,css, js)
